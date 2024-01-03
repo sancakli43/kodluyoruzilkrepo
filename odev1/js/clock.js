@@ -12,5 +12,4 @@ function showTime() {
     let second = date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds();
     let day = days[date.getDay()];
     document.querySelector("#myClock").innerHTML = `${hour}:${minute}:${second} ${day}`;
-
 }
