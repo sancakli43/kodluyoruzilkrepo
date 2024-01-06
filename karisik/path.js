@@ -119,7 +119,7 @@ function callback () {
     this.style.color!="red"?this.style.color="red":this.style.color="black";
 } */
 
-const artir = document.querySelector("#increment");
+/* const artir = document.querySelector("#increment");
 const azalt = document.querySelector("#decrement");
 let counter = 0;
 
@@ -137,4 +137,18 @@ function decrement() {
     counter--;
     document.querySelector("#counter").innerHTML = counter;
     console.log("decrement");
+} */
+
+const person = [{
+    name: "Adem",
+    age: 25,
+    languages: ["JavaScript", "CSS"],
+},
+{
+    name: "Oğuz",
+    age: 33,
+    languages: ["Java", "HTML"],
 }
+];
+console.log(person.filter(i => i.age > 30));
+console.log(person.filter(i => i.languages.includes("JavaScript")));
