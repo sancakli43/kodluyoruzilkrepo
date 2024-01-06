@@ -1,11 +1,21 @@
 function vowelsAndConsonants(s) {
-    
+    let vowels = "aeiou";
+    let strVowels = "";
+    let strConsonants = "";
+    for (let i of s) {
+        if (vowels.includes(i)) {
+            strVowels+=i;
+        }else{
+            strConsonants += i;
+        }
+    }
+    for (k of strVowels.concat(strConsonants)) {
+        console.log(`${k}`);
+    }
 }
 
-let str = "javascript";
-let str1 = str.split("")
-str1 = str1.sort((a,b)=>{
-    return b-a;
-})
-console.log(str1);
-console.log(vowelsAndConsonants(str))
+
+
+let str = "javascriptloops";
+
+vowelsAndConsonants(str)
