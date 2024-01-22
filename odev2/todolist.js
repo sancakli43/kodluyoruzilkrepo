@@ -4,7 +4,7 @@ ul.addEventListener("click", ev => {
         ev.target.classList.toggle("checked");
     }
     else if (ev.target.tagName === "SPAN") {
-        ev.target.parentElement.style.display = "none";
+        ev.target.parentElement.remove();
     }
 })
 
