@@ -152,3 +152,11 @@ const person = [{
 ];
 console.log(person.filter(i => i.age > 30));
 console.log(person.filter(i => i.languages.includes("JavaScript")));
+
+let [,pronoun,,name]=["Merhaba","benim","adım","Mehmet"];
+console.log(pronoun)
+console.log(name)
+
+let person1={name:"Selin",city:"Ankara",favoriteColor:"aqua blue"}; 
+let {name:foo}=person1;
+console.log(foo)
