@@ -82,7 +82,18 @@ const menu = [
   },
 ];
 
-const buttonList = ["All", "Korea", "Japan", "China"];
+let menuList = menu.reduce(function (acc, item) {
+  if (item.category.includes(acc)){
+  console.log(acc)
+    return acc
+  }
+  else
+    return acc.concat(item.category)
+}, ["All"])
+console.log(menuList)
+
+
+/* const buttonList = ["All", "Korea", "Japan", "China"];
 let filterButtonDiv = document.querySelector(".btn-container");
 let filterButton = buttonList.map(item => {
   let button = document.createElement("button");
@@ -90,4 +101,9 @@ let filterButton = buttonList.map(item => {
   button.appendChild(text);
   button.className = "btn btn-outline-dark btn-item";
   filterButtonDiv.appendChild(button);
-})
+}) */
+
+const dizi1 = [1, 2, 3, 4]
+const dizi2 = [5, 6, 7, 8]
+const dizi3 = dizi1.concat(dizi2)
+console.log(dizi3)
